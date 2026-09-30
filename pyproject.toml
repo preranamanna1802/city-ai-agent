@@ -1,0 +1,25 @@
+[project]
+name = "runnables"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mannaprerana", email = "mannaprerana7@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+    "tavily-python>=0.8.4",
+]
+
+[project.scripts]
+runnables = "runnables:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
